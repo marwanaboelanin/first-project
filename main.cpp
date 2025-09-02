@@ -67,6 +67,7 @@ using namespace std;
 int main()
 {
    cout<<"marwan" ;
+   cout<<"suiii";
     int x = 5;
     int y = 10;
     cout << "result " << x + y;
