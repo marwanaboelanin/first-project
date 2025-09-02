@@ -61,52 +61,17 @@ int main()
     return 0;
 }*/
 //==============================================
-//Assignment 11
-//Q1
 #include <iostream>
-#include <forward_list>
 using namespace std;
 
-void insertAtPosition(forward_list<int>& flist, int value, int position) {
+int main()
+{
 
-    if (position == 1) {
-        flist.push_front(value);
-        return;
-    }
-
-    auto it = flist.before_begin();
-    int currentPosition = 1;
-
-
-    for (int i = 1; i < position - 1; ++i) {
-        if (next(it) == flist.end()) {
-            cout << "Position out of bounds." << endl;
-            return;
-        }
-        ++it;
-    }
-
-
-    flist.insert_after(it, value);
-}
-
-
-void printList(const forward_list<int>& flist) {
-    for (int val : flist) {
-        cout << val << " ";
-    }
-    cout << endl;
-}
-
-int main() {
-
-
+    int x = 5;
+    int y = 10;
+    cout << "result " << x + y;
     return 0;
 }
-
-
-
-
 
 
 
